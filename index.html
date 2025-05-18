@@ -844,6 +844,12 @@
   #whatsapp-btn span {
     font-family: sans-serif;
   }
+  .avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+ 
 </style>
 </head>
 <body>
@@ -866,7 +872,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Lava Jato <span style="color: var(--secondary);">Premium</span></h1>
+                <h1>Lava Rapido <span style="color: var(--secondary);">Premium</span></h1>
                 <p>Seu carro merece o melhor tratamento. Com tecnologia de ponta e produtos premium, garantimos a melhor experiência de lavagem para seu veículo.</p>
                 <a href="#services" class="btn btn-primary scroll-link">Nossos Serviços</a>
                 <a href="#qr" class="btn btn-secondary scroll-link">Monitoramento</a>
@@ -887,21 +893,45 @@
                 <h2>Nossos Serviços</h2>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💦</div>
-                    <h3>Lavagem Simples</h3>
-                    <p>Uma lavagem rápida e eficiente para manter seu carro sempre limpo. Inclui lavagem externa, secagem e limpeza de rodas.</p>
-                </div>
-                <div class="service-card" id="whatsapp-card" style="cursor:pointer;">
-                    <div class="service-icon">✨</div>
-                    <h3>Lavagem Completa</h3>
-                    <p>Limpeza detalhada externa e interna, incluindo aspiração, limpeza de painéis e vidros, mais proteção de pneus.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌟</div>
-                    <h3>Lavagem Premium</h3>
-                    <p>Nossa lavagem premium inclui polimento, cera, hidratação de couro, higienização de ar-condicionado e proteção de longa duração.</p>
-                </div>
+                <!-- Lavagem Simples -->
+ <div id="card-simples" class="service-card whatsapp-card">
+    <div class="service-icon">🚿</div>
+    <h3>Lavagem Simples</h3>
+    <p>Limpeza externa básica para remover sujeira e poeira do seu carro.</p>
+ </div>
+
+ <!-- Lavagem Premium -->
+ <div id="card-premium" class="service-card whatsapp-card">
+    <div class="service-icon">👑</div>
+    <h3>Lavagem Premium</h3>
+    <p>Tratamento completo com produtos especiais, proteção de pintura e acabamento profissional.</p>
+ </div>
+
+ <!-- Insulfilm -->
+ <div id="card-insulfilm" class="service-card whatsapp-card">
+    <div class="service-icon">🔒</div>
+    <h3>Insulfilm</h3>
+    <p>Películas para proteção solar, conforto térmico e mais privacidade no seu veículo.</p>
+ </div>
+
+ <!-- Envelopamento Automotivo -->
+ <div id="card-auto" class="service-card whatsapp-card">
+    <div class="service-icon">🚗</div>
+    <h3>Envelopamento Automotivo</h3>
+    <p>Mude o visual do seu carro com estilo e proteção usando vinil adesivo de alta qualidade.</p>
+ </div>
+
+ <!-- Envelopamento de Móveis -->
+ <div id="card-moveis" class="service-card whatsapp-card">
+    <div class="service-icon">🛋️</div>
+    <h3>Envelopamento de Móveis</h3>
+    <p>Transforme seus móveis com vinil adesivo, renovando o ambiente sem precisar trocar tudo.</p>
+ </div>
+ <div id="card-autoeletrica" class="service-card whatsapp-card">
+    <div class="service-icon">🔧</div>
+    <h3>Autoelétrica</h3>
+    <p>Manutenção e reparos elétricos para garantir o funcionamento perfeito do seu veículo.</p>
+ </div>
             </div>
         </div>
     </section>
@@ -960,11 +990,27 @@
                 <div class="testimonial-container">
                     <div class="testimonial">
                         <div class="testimonial-img">
-                            <img src="/api/placeholder/80/80" alt="Cliente">
+                            <img src="img/Imagem do WhatsApp de 2025-05-17 à(s) 20.09.30_4467dae3.jpg" alt="Cliente" class="avatar">
                         </div>
-                        <h3>Roberto Silva</h3>
+                        <h3>Michelle</h3>
                         <div class="rating">★★★★★</div>
-                        <p>"Serviço impecável! Meu carro ficou como novo e a possibilidade de acompanhar a lavagem pelas câmeras me deu muita tranquilidade."</p>
+                        <p>"Eles colocaram o Insulfilm no meu carro, gostei bastante, recomendo demais!"</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-img">
+                            <img src="img/Imagem do WhatsApp de 2025-05-17 à(s) 20.09.30_4467dae3.jpg" alt="Cliente" class="avatar">
+                        </div>
+                        <h3>Michelle</h3>
+                        <div class="rating">★★★★★</div>
+                        <p>"Eles colocaram o Insulfilm no meu carro, gostei bastante, recomendo demais!"</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-img">
+                            <img src="img/Imagem do WhatsApp de 2025-05-17 à(s) 20.09.30_4467dae3.jpg" alt="Cliente" class="avatar">
+                        </div>
+                        <h3>Michelle</h3>
+                        <div class="rating">★★★★★</div>
+                        <p>"Eles colocaram o Insulfilm no meu carro, gostei bastante, recomendo demais!"</p>
                     </div>
                 </div>
                 <div class="slider-nav">
@@ -988,17 +1034,17 @@
                         <div class="contact-icon">📍</div>
                         <div class="contact-details">
                             <h3>Endereço</h3>
-                            <p>Av. Principal, 1234 - Centro</p>
+                            <p>Al. Hernani Edgard de Moura, 251 – Terras de Arieta, Sorocaba - SP</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
                         <div class="contact-details">
                             <h3>Telefone</h3>
-                            <p>(11) 99999-9999</p>
+                            <p>(15) 98150-4409</p>
                         </div>
                     </div>
-                    <a href="https://api.whatsapp.com/send?phone=5515998588492&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Lava%20Jato%20Premium."
+                    <a href="https://api.whatsapp.com/send?phone=5515981504409&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Lava%20Jato%20Premium."
                     target="_blank"
                     id="whatsapp-btn"
                     aria-label="WhatsApp"
@@ -1007,17 +1053,82 @@
                     <span>Fale conosco</span>
                  </a>
     <script>
-    const card = document.getElementById('whatsapp-card');
+    const phone = '5515981504409'; // Número de telefone para WhatsApp
+
+// Lavagem Simples
+document.getElementById('card-simples').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, gostaria de mais informações sobre a Lavagem Simples.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+
+// Lavagem Premium
+document.getElementById('card-premium').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, gostaria de saber mais sobre a Lavagem Premium que vocês oferecem.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+
+// Insulfilm
+document.getElementById('card-insulfilm').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, gostaria de mais informações sobre o serviço de Insulfilm.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+
+// Envelopamento Automotivo
+document.getElementById('card-auto').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, tenho interesse no Envelopamento Automotivo. Pode me passar os detalhes?');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+
+// Envelopamento de Móveis
+document.getElementById('card-moveis').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá! Gostaria de saber mais sobre o Envelopamento de Móveis.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+document.getElementById('card-autoeletrica').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, gostaria de mais informações sobre o serviço de Autoelétrica.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+
+const container = document.querySelector('.testimonial-container');
+const btns = document.querySelectorAll('.slider-btn');
+
+const testimonialWidth = container.querySelector('.testimonial').offsetWidth;
+let currentIndex = 0;
+let maxIndex = btns.length - 1;
+let autoSlideInterval;
+
+function updateSlider(index) {
+  currentIndex = index;
+  container.style.transform = `translateX(-${testimonialWidth * index}px)`;
   
-    card.addEventListener('click', function() {
-      const phone = '5515998588492';
-      const message = encodeURIComponent('Olá, gostaria de mais informações sobre Lavagem Completa!');
-      const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
-      window.open(url, '_blank');
-    });
+  btns.forEach(btn => btn.classList.remove('active'));
+  btns[index].classList.add('active');
+}
+
+btns.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    clearInterval(autoSlideInterval);
+    updateSlider(idx);
+    startAutoSlide();
+  });
+});
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+    updateSlider(currentIndex);
+  }, 4000); // 4 segundos por slide
+}
+
+startAutoSlide();
+
+
 </script>
 </body>
-</html>
-  
-
-                    
+</html>             
