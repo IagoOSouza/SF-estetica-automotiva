@@ -849,8 +849,47 @@
     height: 75px;
     border-radius: 50%;
   }
- 
+     #qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: fit-content;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 10;
+  position: relative;
+  width: 100px;
+  height: 10px;
+}
+.qr-placeholder {
+    border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+  padding-right: 10px;
+  height: 200px;
+}
+.qr-code {
+    border-radius: 20px;
+    width: 20px;
+    height: 250px;
+}
+.wpp-qr {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+.scroll-link {
+  position: relative;
+  z-index: 10;
+}
 </style>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -943,36 +982,14 @@
                 <div class="qr-content">
                     <h2>Acompanhe seu veículo em tempo real</h2>
                     <p>Escaneie o QR Code e acompanhe todo o processo de lavagem do seu veículo através de nossas câmeras em tempo real. Total transparência e segurança para você.</p>
-                    <a href="#" class="btn btn-primary qr-scan-btn" id="openCameraBtn">Abrir câmeras</a>
+                    <a href="https://wa.me/5515981504409?text=Quero%20ver%20meu%20carro" class="btn btn-primary qr-scan-btn" id="openCameraBtn">Abrir câmeras</a>
                 </div>
                 <div class="qr-box">
                     <div class="qr-code">
                         <div class="qr-placeholder">
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
-                            <div class="qr-square"></div>
+                            <div id="qrcode">
+                                <img src="img/Imagem do WhatsApp de 2025-05-19 à(s) 10.31.57_4bf86ac1.jpg" alt="qr-code-whatsapp" class="wpp-qr">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -990,7 +1007,7 @@
                 <div class="testimonial-container">
                     <div class="testimonial">
                         <div class="testimonial-img">
-                            <img src="img/Imagem do WhatsApp de 2025-05-17 à(s) 20.09.30_4467dae3.jpg" alt="Cliente" class="avatar">
+                            <img src="img/images.png" alt="Cliente" class="avatar">
                         </div>
                         <h3>Michelle</h3>
                         <div class="rating">★★★★★</div>
@@ -998,19 +1015,19 @@
                     </div>
                     <div class="testimonial">
                         <div class="testimonial-img">
-                            <img src="img/Imagem do WhatsApp de 2025-05-17 à(s) 20.09.30_4467dae3.jpg" alt="Cliente" class="avatar">
+                            <img src="img/M.png.d4debea3e7632aec31f2803ba0c13923.png" alt="Cliente" class="avatar">
                         </div>
-                        <h3>Michelle</h3>
+                        <h3>Maria Cristina</h3>
                         <div class="rating">★★★★★</div>
-                        <p>"Eles colocaram o Insulfilm no meu carro, gostei bastante, recomendo demais!"</p>
+                        <p>"eles lavaram meu carro, ficou perfeito, melhor trabalho ja feito no meu carro!"</p>
                     </div>
                     <div class="testimonial">
                         <div class="testimonial-img">
-                            <img src="img/Imagem do WhatsApp de 2025-05-17 à(s) 20.09.30_4467dae3.jpg" alt="Cliente" class="avatar">
+                            <img src="img/photo.png" alt="Cliente" class="avatar">
                         </div>
-                        <h3>Michelle</h3>
+                        <h3>Pedro Henrique</h3>
                         <div class="rating">★★★★★</div>
-                        <p>"Eles colocaram o Insulfilm no meu carro, gostei bastante, recomendo demais!"</p>
+                        <p>"Recomendo bastante, sempre lavo meu carro com eles, coloquei o Insulfilm com eles e ficou perfeito"</p>
                     </div>
                 </div>
                 <div class="slider-nav">
@@ -1044,7 +1061,7 @@
                             <p>(15) 98150-4409</p>
                         </div>
                     </div>
-                    <a href="https://api.whatsapp.com/send?phone=5515981504409&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Lava%20Jato%20Premium."
+                    <a href="https://api.whatsapp.com/send?phone=5515981504409&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20SF%20Lava%20Rapido."
                     target="_blank"
                     id="whatsapp-btn"
                     aria-label="WhatsApp"
