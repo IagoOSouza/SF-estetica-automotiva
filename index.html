@@ -971,6 +971,18 @@
     <h3>Autoelétrica</h3>
     <p>Manutenção e reparos elétricos para garantir o funcionamento perfeito do seu veículo.</p>
  </div>
+ <!-- Troca de Óleo -->
+<div id="card-oleo" class="service-card whatsapp-card">
+   <div class="service-icon">🛢️</div>
+   <h3>Troca de Óleo</h3>
+   <p>Serviço rápido com óleo de qualidade e verificação dos principais itens do motor.</p>
+</div>
+<!-- Mecânica Geral -->
+<div id="card-mecanica" class="service-card whatsapp-card">
+   <div class="service-icon">🛠️</div>
+   <h3>Mecânica Geral</h3>
+   <p>Revisões, diagnósticos e consertos em freios, motor, suspensão e mais.</p>
+</div>
             </div>
         </div>
     </section>
@@ -1108,6 +1120,19 @@ document.getElementById('card-moveis').addEventListener('click', function() {
 });
 document.getElementById('card-autoeletrica').addEventListener('click', function() {
   const message = encodeURIComponent('Olá, gostaria de mais informações sobre o serviço de Autoelétrica.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+// Troca de Óleo
+document.getElementById('card-oleo').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, gostaria de saber mais sobre a Troca de Óleo que vocês oferecem.');
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+  window.open(url, '_blank');
+});
+
+// Mecânica Geral
+document.getElementById('card-mecanica').addEventListener('click', function() {
+  const message = encodeURIComponent('Olá, gostaria de saber mais sobre o serviço de Mecânica Geral.');
   const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
   window.open(url, '_blank');
 });
